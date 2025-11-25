@@ -1,0 +1,32 @@
+# If you use Jekyll (GitHub's default SSG), the generated site goes here:
+_site/
+
+# If you use Hugo, the generated site goes here:
+public/
+
+# If you use Eleventy, the default generated site goes here:
+dist/
+.cache/
+
+# Node.js dependencies (Common for bundling CSS/JS)
+/node_modules
+npm-debug.log
+yarn-error.log
+package-lock.json
+
+# VS Code
+.vscode/
+
+# Environment variables (Crucial if you start using APIs)
+.env
+.env.local
+config.local.json
+
+# Local log files
+*.log
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
