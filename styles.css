@@ -1,0 +1,11 @@
+/* Apply the font to the entire body */
+body {
+    font-family: 'Roboto', sans-serif; 
+}
+
+/* Apply a specific weight to a heading */
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700; /* Use the bold weight you selected */
+    font-size: 2.5em;
+}
