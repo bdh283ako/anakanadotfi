@@ -1,9 +1,30 @@
 /* Otsikot (esim. H1) tyylitellään huomiota herättävällä Bungee-fontilla */
-h1 {
-    font-family: 'Bungee', sans-serif;
+h1, h4, h5, h6 {
+    font-family: 'Bungee Spice', sans-serif; 
+    color: #FF4500;
+    font-size: 40px;
 }
+
+h2, h3{
+    font-family: 'Bungee', sans-serif; 
+    color: #3CB371;
+}
+
 
 /* Leipäteksti ja pitkät tekstit tyylitellään luettavammalla Fjalla One -fontilla */
 p, li, a {
-    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Nunito Sans', sans-serif; /*Pyöreät muodot sopivat Anakanan leikkisään estetiikkaan ja pyöreyteen. Erinomainen luettavuus sovelluksiin ja verkkosivuille.*/
+    font-family: 'Lora', sans-serif; /*Antaa brändille hieman uskottavuutta ja klassista tuntua, tasapainottaen "Brainrot"-kaaosta.*/
+    font-size: 15px;
 }
+
+/* Yleiset tyylit koko sivulle */
+body {
+    margin: 100;
+    padding: 10;
+    box-sizing: border-box;
+    /*background-color: #ADD8E6; vaaleansininen*/
+    background-color: #F5F5DC; /* beige */
+    color: #333333; /* tumma harmaa */
+}
+
