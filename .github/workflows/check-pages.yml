@@ -45,9 +45,17 @@ import json,sys
 j=json.load(open('vnu-out.json'))
 msgs=j.get('messages',[])
 if msgs:
-  print('HTML validation messages:')
-  import json
-  print(json.dumps(msgs, indent=2))
+  from collections import Counter, defaultdict
+  types = Counter(m.get('type','unknown') for m in msgs)
+  print('HTML validation messages found:')
+  for t,c in types.items():
+    print(f' - {t}: {c}')
+  print('\nDetailed messages:')
+  for m in msgs:
+    loc = ''
+    if m.get('lastLine'):
+      loc = f"{m.get('lastLine')}:{m.get('lastColumn')}"
+    print(f"[{m.get('type')}] [{loc}] {m.get('message')}")
   sys.exit(1)
 else:
   print('No HTML validation messages.')

@@ -28,8 +28,16 @@ foreach ($p in $Paths) {
     Remove-Item $outFile -Force
 }
 if ($allMessages.Count -gt 0) {
-    Write-Error "HTML validation found $($allMessages.Count) messages"
-    $allMessages | ConvertTo-Json -Depth 5 | Write-Output
+    Write-Error "HTML validation found $($allMessages.Count) message(s) (errors + warnings)."
+    $groups = $allMessages | Group-Object -Property type
+    foreach ($g in $groups) {
+        Write-Output "Type: $($g.Name) — $($g.Count)"
+        foreach ($m in $g.Group) {
+            $loc = ''
+            if ($m.lastLine) { $loc = "$($m.lastLine):$($m.lastColumn)" }
+            Write-Output " - [$loc] $($m.message)"
+        }
+    }
     exit 1
 } else {
     Write-Output "No HTML validation messages."

@@ -17,7 +17,7 @@ This repo includes a minimal GitHub Actions workflow that periodically checks th
 
 ### HTML validation
 - We use the Nu HTML Checker (vnu) to validate HTML for compliance with the HTML spec.
-- CI: the workflow will run the validator against `index.html` and fail if any errors/warnings are present.
+- CI: the workflow will run the validator against `index.html` and fail if any errors or warnings are present (warnings are treated as failures).
 - Local: install the checker and run it:
 
 	PowerShell:
