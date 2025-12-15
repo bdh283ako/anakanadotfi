@@ -1,0 +1,28 @@
+name: Check Pages
+
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    - cron: '0 */6 * * *' # every 6 hours
+
+jobs:
+  smoke-test:
+    name: Smoke test Pages site
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Determine domain to check
+        id: domain
+        run: |
+          if [ -f CNAME ]; then
+            echo "domain=$(cat CNAME)" >> "$GITHUB_OUTPUT"
+          else
+            echo "domain=https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}" >> "$GITHUB_OUTPUT"
+
+      - name: Check site is reachable
+        run: |
+          echo "Checking ${{ steps.domain.outputs.domain }}"
+          curl -sSfL "${{ steps.domain.outputs.domain }}" -o /dev/null
