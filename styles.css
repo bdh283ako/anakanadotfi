@@ -1,9 +1,20 @@
+/* Menu page list items use Fjalla One */
+.menu-page ul li {
+    font-family: 'Fjalla One', sans-serif;
+}
 /* Otsikot (esim. H1) tyylitellään huomiota herättävällä Bungee-fontilla */
 :root{
     --bg: #F5F5DC;
     --fg: #333333;
     --accent: #3CB371;
     --accent-2: #FF4500;
+    --accent-3: #FFD700;
+    --accent-4: #008080;
+    --accent-5: #1E90FF;
+    --accent-6: #FF69B4;
+    --accent-7: #8A2BE2;
+    --accent-8: #FF8C00;
+    --accent-9: #e0d0d0;
     --muted: #555555;
     --container-max: 1200px;
 }
@@ -21,6 +32,7 @@ body{
     -moz-osx-font-smoothing:grayscale;
     line-height: 1.5;
     font-size: clamp(14px, 1.6vw, 18px);
+    a { color: var(--accent); text-decoration: underline }
 }
 
 /* Smooth scrolling for in-page anchors */
@@ -29,7 +41,7 @@ html { scroll-behavior: smooth }
 /* Simple page-level table of contents */
 .page-toc { margin: 0 0 1rem 0 }
 .page-toc ul { list-style: none; padding: 0; margin: 0; display: flex; gap: 1rem }
-.page-toc a { color: var(--accent); text-decoration: none }
+.page-toc a { color: var(--accent); text-decoration: none; font-family: ; }
 
 section { margin-top: 1rem }
 
@@ -51,6 +63,7 @@ section { margin-top: 1rem }
 /* Headings — fluid sizes */
 h1{font-family: 'Bungee Spice', sans-serif; color: var(--accent-2); font-size: clamp(28px, 6vw, 64px); margin: 0.25rem 0}
 h2{font-family: 'Bungee', sans-serif; color: var(--accent); font-size: clamp(18px, 3.8vw, 32px); margin: 0 0 1rem}
+h3{font-family: 'Bungee Shade', sans-serif; color: var(--accent-4); font-size: clamp(15px, 2.5vw, 24px); margin: 0 0 0.75rem}
 
 .lead{font-size: clamp(15px, 1.8vw, 20px); margin-bottom: 1rem}
 
