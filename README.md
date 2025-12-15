@@ -1,3 +1,5 @@
+# [![Check Pages](https://github.com/bdh283ako/anakanadotfi/actions/workflows/check-pages.yml/badge.svg)](https://github.com/bdh283ako/anakanadotfi/actions/workflows/check-pages.yml)
+
 # anakana.fi
 
 This repository contains the source for the static site deployed to GitHub Pages at https://www.anakana.fi/.
