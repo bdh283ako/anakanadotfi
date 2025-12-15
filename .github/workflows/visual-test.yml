@@ -14,9 +14,14 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 18
-      - name: Install dependencies
+      - name: Install dependencies (verbose)
         working-directory: tools/visual-test
-        run: npm install
+        run: |
+          pwd
+          ls -la
+          node -v || true
+          npm -v || true
+          npm install --verbose
       - name: Install Playwright browsers
         working-directory: tools/visual-test
         run: npx playwright install --with-deps
