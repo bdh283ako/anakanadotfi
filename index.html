@@ -21,8 +21,23 @@
 </head>
 <body>
     <header class="site-header">
-        <h1>anakana.fi</h1>
-        <h2>ABC KISSA KÄVELEE</h2>
+        <div class="container header-inner">
+            <div class="brand">
+                <h1>anakana.fi</h1>
+                <h2>ABC KISSA KÄVELEE</h2>
+            </div>
+            <nav class="site-nav" aria-label="Primary">
+                <button class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
+                    <span class="hamburger" aria-hidden="true"></span>
+                    <span class="sr-only">Menu</span>
+                </button>
+                <ul id="primary-navigation" class="nav-list">
+                    <li><a href="/">Koti</a></li>
+                    <li><a href="#about">Tietoja</a></li>
+                    <li><a href="#contact">Yhteystiedot</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main class="container">
@@ -37,9 +52,12 @@
 
 
 
-    <footer
-        <p>&copy; ako 2025</p>
-        <p class="ai-disclosure">Portions of this site's content were generated with assistance from <a href="https://ai.google.dev/terms" target="_blank" rel="noopener">Google Gemini</a>. Content licensed under <a href="LICENSE-CONTENT.md">CC BY 4.0</a>.</p>
+    <footer>
+        <div class="container footer-inner">
+            <p class="copyright">&copy; ako 2025</p>
+            <p class="ai-disclosure">Portions of this site's content were generated with assistance from <a href="https://ai.google.dev/terms" target="_blank" rel="noopener">Google Gemini</a>. Content licensed under <a href="LICENSE-CONTENT.md">CC BY 4.0</a>.</p>
+        </div>
     </footer>
+    <script src="scripts/nav.js" defer></script>
 </body>
 </html>
