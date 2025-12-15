@@ -26,3 +26,29 @@ jobs:
         run: |
           echo "Checking ${{ steps.domain.outputs.domain }}"
           curl -sSfL "${{ steps.domain.outputs.domain }}" -o /dev/null
+
+      - name: Install Java for vnu
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y default-jre-headless wget
+
+      - name: Download vnu.jar
+        run: |
+          wget -q -O vnu.jar https://github.com/validator/validator/releases/latest/download/vnu.jar
+
+      - name: Validate HTML with vnu
+        run: |
+          echo "Validating index.html with vnu"
+          java -jar vnu.jar --format json index.html > vnu-out.json || true
+          python3 - <<'PY'
+import json,sys
+j=json.load(open('vnu-out.json'))
+msgs=j.get('messages',[])
+if msgs:
+  print('HTML validation messages:')
+  import json
+  print(json.dumps(msgs, indent=2))
+  sys.exit(1)
+else:
+  print('No HTML validation messages.')
+PY

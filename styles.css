@@ -13,7 +13,7 @@ h2, h3{
 
 /* Leipäteksti ja pitkät tekstit tyylitellään luettavammalla Fjalla One -fontilla */
 p, li, a {
-    font-family: 'Nunito Sans', sans-serif; /*Pyöreät muodot sopivat Anakanan leikkisään estetiikkaan ja pyöreyteen. Erinomainen luettavuus sovelluksiin ja verkkosivuille.*/
+  /*  font-family: 'Nunito Sans', sans-serif; Pyöreät muodot sopivat Anakanan leikkisään estetiikkaan ja pyöreyteen. Erinomainen luettavuus sovelluksiin ja verkkosivuille.*/
     font-family: 'Lora', sans-serif; /*Antaa brändille hieman uskottavuutta ja klassista tuntua, tasapainottaen "Brainrot"-kaaosta.*/
     font-size: 15px;
 }
