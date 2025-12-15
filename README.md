@@ -1,4 +1,4 @@
-# [![Check Pages](https://github.com/bdh283ako/anakanadotfi/actions/workflows/check-pages.yml/badge.svg)](https://github.com/bdh283ako/anakanadotfi/actions/workflows/check-pages.yml)
+[![Pages Validation](https://img.shields.io/github/actions/workflow/status/bdh283ako/anakanadotfi/check-pages.yml?branch=main&label=Pages%20Validation&style=flat-square)](https://github.com/bdh283ako/anakanadotfi/actions/workflows/check-pages.yml)
 
 # anakana.fi
 
