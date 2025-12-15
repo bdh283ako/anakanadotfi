@@ -30,6 +30,13 @@ This repo includes a minimal GitHub Actions workflow that periodically checks th
 	.\tools\validate-html.ps1 index.html
 	```
 
+	Docker (no Java required locally):
+
+	```powershell
+	# Run validator via Docker (requires Docker desktop / CLI)
+	.\tools\validate-html-docker.ps1 index.html
+	```
+
 	If you don't have Java, install OpenJDK (default-jre) or use the validator's Docker image.
 
 ## License
