@@ -45,5 +45,5 @@ This repo includes a minimal GitHub Actions workflow that periodically checks th
 This project has no license specified. Add a `LICENSE` file if you want to set one.
 
 ## Content license
- Portions of this site's content were generated with assistance from Google Gemini and are licensed under Creative Commons Attribution 4.0 (CC BY 4.0). See [LICENSE-content](LICENSE-content) for details.
+ Portions of this site's content were generated with assistance from Google Gemini and are licensed under Creative Commons Attribution 4.0 (CC BY 4.0). See [LICENSE-CONTENT.md](LICENSE-CONTENT.md) for details.
  This is a good-faith declaration and not legal advice — confirm current Google AI/Generative terms at https://policies.google.com/terms and https://ai.google.dev/terms before relying on it.
