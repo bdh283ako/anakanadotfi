@@ -1,31 +1,80 @@
 /* Otsikot (esim. H1) tyylitellään huomiota herättävällä Bungee-fontilla */
-h1, h4, h5, h6 {
-    font-family: 'Bungee Spice', sans-serif; 
-    color: #FF4500;
-    font-size: 40px;
+:root{
+    --bg: #F5F5DC;
+    --fg: #333333;
+    --accent: #3CB371;
+    --accent-2: #FF4500;
+    --muted: #555555;
+    --container-max: 1200px;
 }
 
-h2, h3{
-    font-family: 'Bungee', sans-serif; 
-    color: #3CB371;
+/* Reset/box sizing */
+*, *::before, *::after{box-sizing: border-box}
+
+body{
+    margin: 0;
+    padding: 1rem;
+    background-color: var(--bg);
+    color: var(--fg);
+    font-family: 'Lora', Georgia, serif;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    line-height: 1.5;
+    font-size: clamp(14px, 1.6vw, 18px);
 }
 
-
-/* Leipäteksti ja pitkät tekstit tyylitellään luettavammalla Fjalla One -fontilla */
-p, li, a {
-  /*  font-family: 'Nunito Sans', sans-serif; Pyöreät muodot sopivat Anakanan leikkisään estetiikkaan ja pyöreyteen. Erinomainen luettavuus sovelluksiin ja verkkosivuille.*/
-    font-family: 'Lora', sans-serif; /*Antaa brändille hieman uskottavuutta ja klassista tuntua, tasapainottaen "Brainrot"-kaaosta.*/
-    font-size: 15px;
+/* container to constrain content on large screens */
+.container{
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 1rem;
 }
 
-/* Yleiset tyylit koko sivulle */
-body {
-    margin: 100;
-    padding: 10;
-    box-sizing: border-box;
-    /*background-color: #ADD8E6; vaaleansininen*/
-    background-color: #F5F5DC; /* beige */
-    color: #333333; /* tumma harmaa */
+/* Headings — fluid sizes */
+h1{font-family: 'Bungee Spice', sans-serif; color: var(--accent-2); font-size: clamp(28px, 6vw, 64px); margin: 0.25rem 0}
+h2{font-family: 'Bungee', sans-serif; color: var(--accent); font-size: clamp(18px, 3.8vw, 32px); margin: 0 0 1rem}
+
+.lead{font-size: clamp(15px, 1.8vw, 20px); margin-bottom: 1rem}
+
+.font-samples p{margin:0.5rem 0}
+
+/* Footer */
+footer{margin-top: 2rem; color: var(--muted); font-size: 0.95rem}
+
+/* AI disclosure */
+.ai-disclosure {
+    font-size: 12px;
+    color: #555555;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 8px;
+    margin-top: 8px;
+    line-height: 1.4;
+}
+.ai-disclosure a { color: var(--accent); text-decoration: underline }
+
+/* Responsive layout breakpoints */
+@media (max-width: 599px){
+    /* mobile */
+    body{padding: 0.75rem}
+    .container{padding: 0.75rem}
+}
+
+@media (min-width: 600px) and (max-width: 1023px){
+    /* tablet */
+    body{font-size: clamp(15px, 1.6vw, 18px)}
+}
+
+@media (min-width: 1024px){
+    /* desktop */
+    body{font-size: clamp(16px, 1.2vw, 18px)}
+}
+
+@media (min-width: 2560px){
+    /* large / 4K screens — scale things up a bit */
+    :root{--container-max: 2000px}
+    h1{font-size: clamp(40px, 4.5vw, 96px)}
+    h2{font-size: clamp(22px, 2.3vw, 40px)}
+    body{font-size: clamp(18px, 1.0vw, 22px)}
 }
 
 /* AI disclosure */
@@ -40,5 +89,6 @@ body {
 .ai-disclosure a {
     color: #3CB371;
     text-decoration: underline;
+    font-family: 'Pacifico', sans-serif;
 }
 
