@@ -33,6 +33,14 @@ html { scroll-behavior: smooth }
 
 section { margin-top: 1rem }
 
+/* Minimal styles for 404 */
+.error-page{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:56vh;text-align:center;padding:2rem}
+.error-page h1{font-size:clamp(56px, 12vw, 120px);margin:0;line-height:0.9;color:var(--accent-2)}
+.error-page h2{margin:0.25rem 0 0.5rem;color:var(--accent)}
+.error-page .muted{color:var(--muted);margin-bottom:0.75rem}
+.ascii-art{font-family:monospace;color:var(--muted);margin:0.75rem 0}
+.error-page a{color:var(--accent);text-decoration:underline}
+
 /* container to constrain content on large screens */
 .container{
     max-width: var(--container-max);
