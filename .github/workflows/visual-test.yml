@@ -16,7 +16,7 @@ jobs:
           node-version: 18
       - name: Install dependencies
         working-directory: tools/visual-test
-        run: npm ci
+        run: npm install
       - name: Install Playwright browsers
         working-directory: tools/visual-test
         run: npx playwright install --with-deps
