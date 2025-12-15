@@ -1,0 +1,30 @@
+name: Visual tests (Playwright)
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch: {}
+
+jobs:
+  screenshots:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+      - name: Install dependencies
+        working-directory: tools/visual-test
+        run: npm ci
+      - name: Install Playwright browsers
+        working-directory: tools/visual-test
+        run: npx playwright install --with-deps
+      - name: Run screenshots
+        working-directory: tools/visual-test
+        run: npm run screenshot
+      - name: Upload screenshots
+        uses: actions/upload-artifact@v4
+        with:
+          name: screenshots
+          path: tools/visual-test/artifacts/screenshots

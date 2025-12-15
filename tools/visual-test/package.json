@@ -1,0 +1,11 @@
+{
+  "name": "anakanadotfi-visual-test",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "screenshot": "node screenshot.js"
+  },
+  "devDependencies": {
+    "playwright": "^1.42.0"
+  }
+}
