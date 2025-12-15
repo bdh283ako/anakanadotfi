@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yhteystiedot — anakana.fi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Spice&family=Fjalla+One&family=Inter&family=Nunito+Sans&family=Lora&family=Assistant&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -28,9 +32,29 @@
         </div>
     </header>
     <main class="container">
-        <h2>Yhteystiedot</h2>
-        <p>Ota yhteyttä sähköpostitse: <a href="mailto:info@anakana.fi">info@anakana.fi</a></p>
-        <p>Puhelin: +358 50 1234567</p>
+        <h2 id="yhteystiedot">Yhteystiedot</h2>
+        <nav class="page-toc" aria-label="Yhteystiedot sisältö">
+            <ul>
+                <li><a href="#sahkoposti">Sähköposti</a></li>
+                <li><a href="#puhelin">Puhelin</a></li>
+                <li><a href="#osoite">Osoite</a></li>
+            </ul>
+        </nav>
+
+        <section id="sahkoposti">
+            <h3>Sähköposti</h3>
+            <p>Ota yhteyttä sähköpostitse: <a href="mailto:info@anakana.fi">info@anakana.fi</a></p>
+        </section>
+
+        <section id="puhelin">
+            <h3>Puhelin</h3>
+            <p>Puhelin: +358 50 1234567</p>
+        </section>
+
+        <section id="osoite">
+            <h3>Osoite</h3>
+            <p>Postiosoite: Haaga-Helia, Helsinki.</p>
+        </section>
     </main>
 
     <footer>

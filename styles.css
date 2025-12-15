@@ -23,6 +23,16 @@ body{
     font-size: clamp(14px, 1.6vw, 18px);
 }
 
+/* Smooth scrolling for in-page anchors */
+html { scroll-behavior: smooth }
+
+/* Simple page-level table of contents */
+.page-toc { margin: 0 0 1rem 0 }
+.page-toc ul { list-style: none; padding: 0; margin: 0; display: flex; gap: 1rem }
+.page-toc a { color: var(--accent); text-decoration: none }
+
+section { margin-top: 1rem }
+
 /* container to constrain content on large screens */
 .container{
     max-width: var(--container-max);

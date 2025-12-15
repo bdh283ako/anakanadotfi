@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tietoja — anakana.fi</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Spice&family=Fjalla+One&family=Inter&family=Nunito+Sans&family=Lora&family=Assistant&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -28,8 +32,23 @@
         </div>
     </header>
     <main class="container">
-        <h2>Tietoja</h2>
-        <p>Tämä sivu kertoo projektista ja sen taustoista. Anakana on fiktiivinen brändi harjoitustyötä varten.</p>
+        <h2 id="tietoja">Tietoja</h2>
+        <nav class="page-toc" aria-label="Tietoja sisältö">
+            <ul>
+                <li><a href="#projektista">Projektista</a></li>
+                <li><a href="#tekijasta">Tekijä</a></li>
+            </ul>
+        </nav>
+
+        <section id="projektista">
+            <h3>Projektista</h3>
+            <p>Tämä harjoitustyö on tehty Haaga-Helian kurssille 'Johdanto digipalveluihin'. Sivusto demonstroi responsiivista ja saavutettavaa HTML/CSS-rakennetta.</p>
+        </section>
+
+        <section id="tekijasta">
+            <h3>Tekijä</h3>
+            <p>Tekijä: ako (bdh283ako). Yhteystiedot löytyvät Yhteystiedot-sivulta.</p>
+        </section>
     </main>
 
     <footer>
