@@ -41,7 +41,7 @@ html { scroll-behavior: smooth }
 /* Simple page-level table of contents */
 .page-toc { margin: 0 0 1rem 0 }
 .page-toc ul { list-style: none; padding: 0; margin: 0; display: flex; gap: 1rem }
-.page-toc a { color: var(--accent); text-decoration: none; font-family: ; }
+.page-toc a { color: var(--accent); text-decoration: none; font-family: Bungee; }
 
 section { margin-top: 1rem }
 
