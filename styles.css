@@ -1,7 +1,5 @@
-/* Menu page list items use Fjalla One */
-.menu-page ul li {
-    font-family: 'Fjalla One', sans-serif;
-}
+/* Global styles
+*/
 /* Otsikot (esim. H1) tyylitellään huomiota herättävällä Bungee-fontilla */
 :root{
     --bg: #F5F5DC; /* rauhallinen hiekka */
@@ -16,7 +14,7 @@
     --accent-8: #FF8C00; /* dark orange */
     --accent-9: #e0d0d0;
     --accent-10: #d0e0d0;
-    --accent-11: #00CED1; /*sinijuustodippi
+    --accent-11: #00CED1; /*sinijuustodippi*/
     --muted: #555555;
     --container-max: 1200px;
 }
@@ -35,6 +33,7 @@ body{
     line-height: 1.5;
     font-size: clamp(14px, 1.6vw, 18px);
     a { color: var(--accent); text-decoration: underline }
+    ul li {font-family: 'Fjalla One', sans-serif;
 }
 
 /* Smooth scrolling for in-page anchors */
@@ -74,7 +73,7 @@ h3{font-family: 'Bungee Shade', sans-serif; color: var(--accent-4); font-size: c
 /* Footer */
 /* Float the featured image on index page */
 .featured-image {
-    float: middle;
+    float: none;
     margin: 0 0 1.5rem 2rem;
     max-width: 320px;
     width: 40vw;
