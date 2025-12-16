@@ -74,7 +74,7 @@ h3{font-family: 'Bungee Shade', sans-serif; color: var(--accent-4); font-size: c
 /* Footer */
 /* Float the featured image on index page */
 .featured-image {
-    float: right;
+    float: middle;
     margin: 0 0 1.5rem 2rem;
     max-width: 320px;
     width: 40vw;
