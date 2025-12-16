@@ -113,7 +113,28 @@ footer{margin-top: 2rem; color: var(--muted); font-size: 0.95rem}
 .header-inner{display:flex;align-items:center;justify-content:space-between;gap:1rem}
 .site-nav{display:flex;align-items:center}
 .nav-list{list-style:none;display:flex;gap:1rem;margin:0;padding:0}
-.nav-list a{text-decoration:none;color:var(--fg)}
+.nav-list a{
+    text-decoration:none;
+    color:var(--fg);
+    position:relative;
+    transition: color 0.2s;
+}
+.nav-list a.active,
+.nav-list a[aria-current="page"] {
+    color: var(--accent-2);
+    font-weight: bold;
+    text-shadow: 0 2px 8px rgba(255,69,0,0.10);
+}
+.nav-list a.active::after,
+.nav-list a[aria-current="page"]::after {
+    content: '';
+    display: block;
+    margin: 0.2em auto 0 auto;
+    width: 60%;
+    height: 3px;
+    border-radius: 2px;
+    background: var(--accent-2);
+}
 .nav-toggle{display:none;background:transparent;border:0;padding:0.25rem;cursor:pointer}
 .hamburger{display:block;width:22px;height:2px;background:var(--fg);position:relative}
 .hamburger::before,.hamburger::after{content:'';position:absolute;left:0;width:22px;height:2px;background:var(--fg)}
