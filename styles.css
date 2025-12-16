@@ -32,7 +32,7 @@ body{
     -moz-osx-font-smoothing:grayscale;
     line-height: 1.5;
     font-size: clamp(14px, 1.6vw, 18px);
-    a { color: var(--accent); text-decoration: underline }
+    a { color: var(--accent); text-decoration: underline };
     ul li {font-family: 'Fjalla One', sans-serif;
 }
 
@@ -121,6 +121,9 @@ footer{margin-top: 2rem; color: var(--muted); font-size: 0.95rem}
 .hamburger::after{top:7px}
 
 @media (max-width: 599px){
+        h1 {
+            font-size: clamp(18px, 7vw, 28px);
+        }
     .nav-list{
         position:absolute;
         right:1rem;
