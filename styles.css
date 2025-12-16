@@ -190,7 +190,7 @@ footer{margin-top: 2rem; color: var(--muted); font-size: 0.95rem}
 @media (min-width:600px){
     .nav-toggle{display:none}
     .nav-list{position:static;display:flex}
-    .header-inner{align-items:center}
+    .header-inner{align-items:baseline}
 }
 
 /* Responsive layout breakpoints */
