@@ -72,7 +72,29 @@ h3{font-family: 'Bungee Shade', sans-serif; color: var(--accent-4); font-size: c
 .font-samples p{margin:0.5rem 0}
 
 /* Footer */
+/* Float the featured image on index page */
+.featured-image {
+    float: right;
+    margin: 0 0 1.5rem 2rem;
+    max-width: 320px;
+    width: 40vw;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+}
+
+@media (max-width: 900px) {
+    .featured-image {
+        float: none;
+        display: block;
+        margin: 1.5rem auto;
+        width: 90vw;
+        max-width: 98vw;
+    }
+}
+
 footer{margin-top: 2rem; color: var(--muted); font-size: 0.95rem}
+.copyright{font-family: 'Bungee Hairline' !important;}
 
 /* AI disclosure */
 .ai-disclosure {
@@ -104,23 +126,24 @@ footer{margin-top: 2rem; color: var(--muted); font-size: 0.95rem}
         position:absolute;
         right:1rem;
         top:64px;
-        background:rgba(30,30,30,0.97);
+        background: var(--accent-11);
         color:#fff;
         flex-direction:column;
-        padding:0.75rem;
+        padding:1.75rem;
         border:1px solid #222;
         border-radius:8px;
         display:none;
-        min-width:160px;
+        min-width:140px;
         box-shadow:0 8px 32px rgba(0,0,0,0.32), 0 1.5px 6px rgba(0,0,0,0.18);
+        font-family: Bungee, sans-serif;
         z-index:1000;
     }
     .nav-list.open{display:flex}
     .nav-list.open a { color: #fff; }
     .nav-toggle{display:inline-flex}
     .header-inner{align-items:flex-start}
-    footer .footer-inner{display:flex;flex-direction:column;gap:6px;align-items:center;text-align:center}
-    .copyright{order:0}
+    .footer .footer-inner{display:flex;flex-direction:column;gap:6px;align-items:center;text-align:center}
+    .copyright{order:0;font-family: 'Bungee Hairline' !important;}
     .ai-disclosure{order:1;font-size:11px;padding-top:6px;border-top:none}
 }
 
@@ -173,3 +196,6 @@ footer{margin-top: 2rem; color: var(--muted); font-size: 0.95rem}
     color: var(--accent-2);
 }
 
+#primary-nav a {
+    font-family: 'Fjalla One', sans-serif;
+}
