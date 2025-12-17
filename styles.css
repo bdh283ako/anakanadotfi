@@ -33,7 +33,7 @@ body{
     line-height: 1.5;
     font-size: clamp(14px, 1.6vw, 18px);
     a { color: var(--accent); text-decoration: underline ;}
-    ul li {font-family: 'Fjalla One', sans-serif;}
+    ul li {font-family: 'Fjalla One', sans-serif ;}
 }
 
 /* Smooth scrolling for in-page anchors */
@@ -149,7 +149,7 @@ footer{margin-top: 2rem; color: var(--muted); font-size: 0.95rem}
 
 @media (max-width: 599px){
         h1 {
-            font-size: clamp(18px, 7vw, 28px);
+            font-size: clamp(32px, 10vw, 96px);
         }
     .nav-list{
         position:absolute;
