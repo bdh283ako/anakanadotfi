@@ -176,6 +176,12 @@ footer {
   font-size: 0.95rem;
 }
 
+  .copyright {
+    order: 0;
+    font-family: "Bungee", sans-serif;
+    color: var(--accent-4);
+  }
+
 /* AI disclosure */
 .ai-disclosure {
   font-size: 12px;
@@ -331,11 +337,7 @@ footer {
     align-items: center;
     text-align: center;
   }
-  .copyright {
-    order: 0;
-    font-family: "Bungee", sans-serif;
-    color: var(--accent-12);
-  }
+
   .ai-disclosure {
     order: 1;
     font-size: 11px;
