@@ -151,7 +151,7 @@ footer{margin-top: 2rem; color: var(--muted); font-size: 0.95rem}
 @media (max-width: 599px){
         h1 {
             font-size: clamp(32px, 13vw, 96px);
-            font-family: Bungee Hairline, sans-serif;
+            font-family: /*Bungee Hairline,*/ sans-serif;
         }
     .nav-list{
         position:absolute;
