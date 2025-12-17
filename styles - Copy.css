@@ -32,8 +32,8 @@ body{
     -moz-osx-font-smoothing:grayscale;
     line-height: 1.5;
     font-size: clamp(14px, 1.6vw, 18px);
-    a { color: var(--accent); text-decoration: underline ;}
-    ul li {font-family: 'Fjalla One', sans-serif;}
+    a { color: var(--accent); text-decoration: underline };
+    ul li {font-family: 'Fjalla One', sans-serif;
 }
 
 /* Smooth scrolling for in-page anchors */
