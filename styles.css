@@ -463,6 +463,21 @@ footer {
   aspect-ratio: 16/9;
 }
 
+.hero-info {
+  position: relative;
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("images/anainki.jpg");
+ background-size: cover;
+  background-position: center;
+  aspect-ratio: 16/9;
+}
+
 .hero-content {
   z-index: 2;
 }
