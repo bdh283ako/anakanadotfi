@@ -523,9 +523,18 @@ h2.menu {
   background: white;
   padding: 20px;
   border-radius: 0px; /* Brainrot-geometria suosii kulmikkuutta */
-  border-left: 10px solid var(--electric-blue);
+  border-left: 10px solid var(--accent-5);
   box-shadow: 10px 10px 0px var(--ananas-yellow);
 }
+
+.menu-category-pizza {
+  background: white;
+  padding: 20px;
+  border-radius: 0px; /* Brainrot-geometria suosii kulmikkuutta */
+  border-left: 10px solid var(--accent-11);
+  box-shadow: 10px 10px 0px var(--ananas-yellow);
+}
+
 
 h3.menu {
   font-family: "Fjalla One", sans-serif;
