@@ -18,6 +18,13 @@
     --accent-12: #ADD8E6; /*vaalea taivaansininen taustoille*/
     --muted: #555555;
     --container-max: 1200px;
+    
+    --ananas-yellow: #FFD700;
+    --electric-blue: #1E90FF;
+    --leaf-green: #3CB371;
+    --neon-orange: #FF4500;
+    --sand-beige: #F5F5DC;
+    --dark-text: #1a1a1a;
 }
 
 /* Reset/box sizing */
@@ -246,3 +253,54 @@ footer{margin-top: 2rem; color: var(--muted); font-size: 0.95rem}
     font-family: 'Bungee Hairline', sans-serif; font-weight: bold; font-size: xx-small;    
     color: var(--accent-5);
 }
+
+/* gemini.html specific styles */
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            /* Korvaa alla oleva URL omalla taustakuvallasi */
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                        url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            aspect-ratio: 16/9;
+        }
+
+        .hero-content {
+            z-index: 2;
+        }
+
+         .main-heading {
+            font-family: 'Monoton', cursive;
+            font-size: clamp(3rem, 10vw, 7rem);
+            color: var(--ananas-yellow);
+            margin: 0;
+            text-shadow: 0 0 20px var(--neon-orange);
+            line-height: 1;
+        }
+
+        .sub-heading {
+            font-family: 'Bungee', cursive;
+            font-size: clamp(1.5rem, 4vw, 3rem);
+            color: var(--electric-blue);
+            margin-top: -10px;
+            letter-spacing: 2px;
+        }
+
+        .italian-tag {
+            font-family: 'Fjalla One', sans-serif;
+            background: var(--leaf-green);
+            color: white;
+            padding: 5px 20px;
+            display: inline-block;
+            transform: rotate(-2deg);
+            margin-top: 20px;
+            font-size: 1.2rem;
+        }
