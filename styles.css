@@ -610,6 +610,6 @@ h3.menu {
 
 .cta-button:hover {
   transform: translate(-4px, -4px);
-  box-shadow: 12px 12px 0px var(--neon-orange);
-  background-color: var(--leaf-green);
+  box-shadow: 12px 12px 0px var(--accent-2);
+  background-color: var(--accent-7);
 }
