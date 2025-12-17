@@ -70,8 +70,8 @@ section { margin-top: 1rem }
 
 /* Headings — fluid sizes */
 h1{font-family: 'Bungee Spice', sans-serif; color: var(--accent-2); font-size: clamp(28px, 6vw, 128px); margin: 0.25rem 0}
-h2{font-family: 'Bungee', sans-serif; color: var(--accent); font-size: clamp(18px, 3.8vw, 48px); margin: 0 0 1rem}
-h3{font-family: 'Bungee Shade', sans-serif; color: var(--accent-4); font-size: clamp(15px, 2.5vw, 32px); margin: 0 0 0.75rem}
+h2{font-family: 'Bungee', sans-serif; color: var(--accent); font-size: clamp(18px, 3.8vw, 32px); margin: 0 0 1rem}
+h3{font-family: 'Bungee Shade', sans-serif; color: var(--accent-4); font-size: clamp(15px, 2.5vw, 24px); margin: 0 0 0.75rem}
 
 .lead{font-size: clamp(15px, 1.8vw, 20px); margin-bottom: 1rem}
 
