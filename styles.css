@@ -15,6 +15,7 @@
     --accent-9: #e0d0d0;
     --accent-10: #d0e0d0;
     --accent-11: #00CED1; /*sinijuustodippi*/
+    --accent-12: #ADD8E6; /*vaalea taivaansininen taustoille*/
     --muted: #555555;
     --container-max: 1200px;
 }
@@ -149,7 +150,7 @@ footer{margin-top: 2rem; color: var(--muted); font-size: 0.95rem}
 
 @media (max-width: 599px){
         h1 {
-            font-size: clamp(32px, 10vw, 96px);
+            font-size: clamp(48px, 13vw, 96px);
         }
     .nav-list{
         position:absolute;
