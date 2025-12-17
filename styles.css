@@ -20,7 +20,6 @@
     --container-max: 1200px;
     
     --ananas-yellow: #FFD700;
-    --electric-blue: #1E90FF;
     --leaf-green: #3CB371;
     --neon-orange: #FF4500;
     --sand-beige: #F5F5DC;
@@ -259,16 +258,16 @@ footer{margin-top: 2rem; color: var(--muted); font-size: 0.95rem}
         /* Hero Section */
         .hero {
             position: relative;
-            height: 50vh;
+            height: 60vh;
             width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
-            /* Korvaa alla oleva URL omalla taustakuvallasi */
             background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
-                        url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80');
-            background-size: cover;
+            url('images/pranav-madhu-zWUBf0BWK98-unsplash.jpg');
+            /* url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80'); */
+                        background-size: cover;
             background-position: center;
             aspect-ratio: 16/9;
         }
@@ -287,9 +286,9 @@ footer{margin-top: 2rem; color: var(--muted); font-size: 0.95rem}
         }
 
         .sub-heading {
-            font-family: 'Bungee', cursive;
+            font-family: 'Bungee Shade', cursive;
             font-size: clamp(1.5rem, 4vw, 3rem);
-            color: var(--electric-blue);
+            color: var(--accent-4);
             margin-top: -10px;
             letter-spacing: 2px;
         }
