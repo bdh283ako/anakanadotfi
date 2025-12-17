@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANAKANA | Veramente Gustoso</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Monoton&family=Nunito+Sans:wght@300;400;700&family=Fjalla+One&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --ananas-yellow: #FFD700;
+            --electric-blue: #1E90FF;
+            --leaf-green: #3CB371;
+            --neon-orange: #FF4500;
+            --sand-beige: #F5F5DC;
+            --dark-text: #1a1a1a;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Nunito Sans', sans-serif;
+            background-color: var(--sand-beige);
+            color: var(--dark-text);
+            overflow-x: hidden;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            /* Korvaa alla oleva URL omalla taustakuvallasi */
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                        url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            aspect-ratio: 16/9;
+        }
+
+        .hero-content {
+            z-index: 2;
+        }
+
+        h1 {
+            font-family: 'Monoton', cursive;
+            font-size: clamp(3rem, 10vw, 7rem);
+            color: var(--ananas-yellow);
+            margin: 0;
+            text-shadow: 0 0 20px var(--neon-orange);
+            line-height: 1;
+        }
+
+        .sub-heading {
+            font-family: 'Bungee', cursive;
+            font-size: clamp(1.5rem, 4vw, 3rem);
+            color: var(--electric-blue);
+            margin-top: -10px;
+            letter-spacing: 2px;
+        }
+
+        .italian-tag {
+            font-family: 'Fjalla One', sans-serif;
+            background: var(--leaf-green);
+            color: white;
+            padding: 5px 20px;
+            display: inline-block;
+            transform: rotate(-2deg);
+            margin-top: 20px;
+            font-size: 1.2rem;
+        }
+
+        /* Menu Section */
+        .menu-container {
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-family: 'Bungee', cursive;
+            color: var(--leaf-green);
+            text-align: center;
+            border-bottom: 4px solid var(--ananas-yellow);
+            padding-bottom: 10px;
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .menu-category {
+            background: white;
+            padding: 20px;
+            border-radius: 0px; /* Brainrot-geometria suosii kulmikkuutta */
+            border-left: 10px solid var(--electric-blue);
+            box-shadow: 10px 10px 0px var(--ananas-yellow);
+        }
+
+        h3 {
+            font-family: 'Fjalla One', sans-serif;
+            color: var(--neon-orange);
+            text-transform: uppercase;
+        }
+
+        .item {
+            margin-bottom: 15px;
+        }
+
+        .item-name {
+            font-weight: 700;
+            color: var(--electric-blue);
+            display: block;
+        }
+
+        .item-desc {
+            font-size: 0.9rem;
+            font-weight: 300;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 0.8rem;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="italian-tag">VERAMENTE GUSTOSO</div>
+            <h1>ANAKANA</h1>
+            <div class="sub-heading">TROOPPINEN KAAOS</div>
+        </div>
+    </section>
+
+    <div class="menu-container">
+        <h2>BRAINROT BEVERAGES</h2>
+        
+        <div class="menu-grid">
+            <div class="menu-category">
+                <h3>The Main Character</h3>
+                <div class="item">
+                    <span class="item-name">ANANAS MAXIMUS</span>
+                    <span class="item-desc">100% tuorepuristettua ananasta neon-pillillä. No cap.</span>
+                </div>
+                <div class="item">
+                    <span class="item-name">SKIBIDI SPLASH</span>
+                    <span class="item-desc">Ananasta ja sähkönsinistä kookosvettä.</span>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <h3>The Coconut Glitch</h3>
+                <div class="item">
+                    <span class="item-name">PIÑA COLLADA 2.0</span>
+                    <span class="item-desc">Kookoskermaa ja ananasta kookospähkinässä.</span>
+                </div>
+                <div class="item">
+                    <span class="item-name">BLUE HAWAIIAN ERROR</span>
+                    <span class="item-desc">Kookosglitch sähkönsinisellä värillä.</span>
+                </div>
+            </div>
+
+            <div class="menu-category" style="border-left-color: var(--leaf-green);">
+                <h3>Ginger Grindset</h3>
+                <div class="item">
+                    <span class="item-name">SPICY ITALIAN LORE</span>
+                    <span class="item-desc">Ananasta, inkivääriä ja tulista asennetta.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2025 ANAKANA - Lisensoitu MIT & CC BY 4.0
+    </div>
+
+</body>
+</html>
