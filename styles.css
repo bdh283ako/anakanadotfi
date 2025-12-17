@@ -458,7 +458,7 @@ footer {
   text-align: center;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("images/NGpizzal.jpg");
- background-size: cover;
+  background-size: cover;
   background-position: center;
   aspect-ratio: 16/9;
 }
@@ -473,7 +473,23 @@ footer {
   text-align: center;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url("images/anainki.jpg");
- background-size: cover;
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 16/9;
+}
+
+
+.hero-cta{
+  position: relative;
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("images/ciaobellajuissi.png");
+  background-size: cover;
   background-position: center;
   aspect-ratio: 16/9;
 }
@@ -550,7 +566,6 @@ h2.menu {
   box-shadow: 10px 10px 0px var(--ananas-yellow);
 }
 
-
 h3.menu {
   font-family: "Fjalla One", sans-serif;
   color: var(--neon-orange);
@@ -575,4 +590,26 @@ h3.menu {
   float: right;
   font-weight: 600;
   color: var(--leaf-green);
+}
+
+/* CTA-Painike */
+.cta-button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 20px 40px;
+  background-color: var(--accent-11);
+  color: white;
+  font-family: "Bungee", cursive;
+  font-size: 1.5rem;
+  text-decoration: none;
+  border: none;
+  box-shadow: 8px 8px 0px var(--ananas-yellow);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  transform: translate(-4px, -4px);
+  box-shadow: 12px 12px 0px var(--neon-orange);
+  background-color: var(--leaf-green);
 }

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANAKANA | Veramente Gustoso</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Monoton&family=Nunito+Sans:wght@300;400;700&family=Fjalla+One&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --ananas-yellow: #FFD700;
+            --electric-blue: #1E90FF;
+            --leaf-green: #3CB371;
+            --neon-orange: #FF4500;
+            --sand-beige: #F5F5DC;
+            --dark-text: #1a1a1a;
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Nunito Sans', sans-serif;
+            background-color: var(--sand-beige);
+            color: var(--dark-text);
+            scroll-behavior: smooth;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                        url('taustakuva.png'); /* Muista vaihtaa kuvan tiedostonimi tästä! */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero-content {
+            z-index: 2;
+        }
+
+        h1 {
+            font-family: 'Monoton', cursive;
+            font-size: clamp(3rem, 12vw, 8rem);
+            color: var(--ananas-yellow);
+            margin: 0;
+            text-shadow: 0 0 20px var(--neon-orange);
+            line-height: 1;
+        }
+
+        .sub-heading {
+            font-family: 'Bungee', cursive;
+            font-size: clamp(1.2rem, 3vw, 2.5rem);
+            color: var(--electric-blue);
+            margin-top: -10px;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 0px white;
+        }
+
+        /* CTA-Painike */
+        .cta-button {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 20px 40px;
+            background-color: var(--electric-blue);
+            color: white;
+            font-family: 'Bungee', cursive;
+            font-size: 1.5rem;
+            text-decoration: none;
+            border: none;
+            box-shadow: 8px 8px 0px var(--ananas-yellow);
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            transform: translate(-4px, -4px);
+            box-shadow: 12px 12px 0px var(--neon-orange);
+            background-color: var(--leaf-green);
+        }
+
+        /* The Lore / Tietoja -osio */
+        .about-section {
+            padding: 80px 20px;
+            background-color: white;
+            text-align: center;
+        }
+
+        .lore-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .italian-tag {
+            font-family: 'Fjalla One', sans-serif;
+            background: var(--leaf-green);
+            color: white;
+            padding: 5px 20px;
+            display: inline-block;
+            transform: rotate(-2deg);
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+
+        .lore-text {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        .slogan-highlight {
+            font-family: 'Bungee', cursive;
+            color: var(--neon-orange);
+            display: block;
+            margin-top: 20px;
+            font-size: 1.5rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--dark-text);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            font-family: 'Nunito Sans', sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>ANAKANA</h1>
+            <div class="sub-heading">TROOPPINEN KAAOS</div>
+            <a href="#menu" class="cta-button">TILAA KAAOS</a>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="lore-container">
+            <div class="italian-tag">VERAMENTE GUSTOSO</div>
+            <h2 style="font-family: 'Bungee';">ANAKANA LORE</h2>
+            <p class="lore-text">
+                Anakana syntyi virheestä italialaisessa koodissa ja halusta tuoda trooppinen kaaos keskelle harmaata arkea. 
+                Me emme tarjoile vain juomia; me tarjoilemme <strong>visuaalista ylikuormitusta</strong> ja <strong>nestemäistä dopamiinia</strong>.
+            </p>
+            <span class="slogan-highlight">"NOLLA PROSENTTIA JÄRKEÄ. SATA PROSENTTIA ANANASTA."</span>
+        </div>
+    </section>
+
+    <div class="footer">
+        <p>&copy; 2024 ANAKANA | 80% ANANAS | 100% BRAINROT</p>
+    </div>
+
+</body>
+</html>
