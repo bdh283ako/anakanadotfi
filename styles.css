@@ -175,9 +175,6 @@ footer {
   color: var(--muted);
   font-size: 0.95rem;
 }
-.copyright {
-  font-family: "Bungee Hairline" !important;
-}
 
 /* AI disclosure */
 .ai-disclosure {
@@ -336,7 +333,8 @@ footer {
   }
   .copyright {
     order: 0;
-    font-family: "Bungee Hairline";
+    font-family: "Bungee", sans-serif;
+    color: var(--accent-12);
   }
   .ai-disclosure {
     order: 1;
